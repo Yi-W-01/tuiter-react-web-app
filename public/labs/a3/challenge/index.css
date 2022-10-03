@@ -1,0 +1,418 @@
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+
+.rotate-list {
+    transform: rotate(12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+
+.rotate-image {
+    transform: rotate(-10deg);
+}
+
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);}
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;}
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;}
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;}
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;}
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+
+.gradients-linear {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-linear-own{
+    background: linear-gradient(blue, pink);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-radial {
+    background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-radial-own {
+    background: radial-gradient(red, white);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-positioned {
+    background:
+            radial-gradient(at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.gradients-positioned-own {
+    background:
+            radial-gradient(at bottom right, yellow, dodgerblue);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: black;
+    }
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+    }
+}
+
+.animation-keyframes-own {
+    position: relative;
+    right: 0px;
+    animation-duration: 5s;
+    animation-name: slideout;
+    width: 300px;
+    height: 300px;
+    background-color: plum;
+    color: cornflowerblue;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slideout {
+    from {
+        position: relative;
+        right: 0px;
+        font-size: 120%;
+        margin-left: 100%;
+        width: 300px;
+        height: 300px;
+        background-color: plum;
+        color: cornflowerblue;
+    }
+    50% {
+        position: relative;
+        left: 100px;
+        font-size: 30%;
+        margin-left: 25%;
+        width: 150px;
+        height: 150px;
+        background-color:mediumpurple;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        right: 0px;
+        font-size: 130%;
+        margin-left: 0%;
+        width: 300px;
+        height: 300px;
+        background-color: dodgerblue;
+        color: burlywood;
+    }
+}
+
+.flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+.flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1 {
+    background-color: yellow;
+}
+.flex-box-2 {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3 {
+    background-color: red;
+    color: white;
+}
+
+
+.flex-container-center {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+}
+.flex-box-center  {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1-center  {
+    background-color: yellow;
+}
+.flex-box-2-center  {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3-center  {
+    background-color: red;
+    color: white;
+}
+
+
+
+.flex-container-end {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: end;
+}
+.flex-box-end  {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1-end  {
+    background-color: yellow;
+}
+.flex-box-2-end  {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3-end  {
+    background-color: red;
+    color: white;
+}
+
+
+
+.flex-container-around{
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+}
+.flex-box-around  {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1-around  {
+    background-color: yellow;
+}
+.flex-box-2-around  {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3-around  {
+    background-color: red;
+    color: white;
+}
+
+
+.flex-container-between{
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+}
+.flex-box-between  {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1-between  {
+    background-color: yellow;
+}
+.flex-box-2-between  {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3-between  {
+    background-color: red;
+    color: white;
+}
+
+
+.flex-container-evenly-start{
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.flex-box-evenly-start  {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1-evenly-start  {
+    background-color: yellow;
+}
+.flex-box-2-evenly-start  {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3-evenly-start  {
+    background-color: red;
+    color: white;
+}
+
+
+.flex-container-evenly-center{
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex-box-evenly-center  {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1-evenly-center  {
+    background-color: yellow;
+}
+.flex-box-2-evenly-center  {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3-evenly-center  {
+    background-color: red;
+    color: white;
+}
+
+
+.flex-container-over{
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+}
+.flex-container-over > .flex-box-over {
+    flex-basis: 100%;
+}
+.flex-box-over  {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1-over  {
+    background-color: yellow;
+}
+.flex-box-2-over  {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3-over  {
+    background-color: red;
+    color: white;
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+    body {
+        background-color: gray;
+    }
+    .media-query {
+        background-color: darkseagreen;
+        color: black;
+    }
+}
+@media (min-width: 600px) and (max-width: 800px) {
+    body {
+        background-color: sandybrown;
+        color: black;
+    }
+
+    .media-query {
+        background-color: olivedrab;
+        color: white;
+    }
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+    body {
+        background-color: indianred;
+        color: white;
+    }
+    .media-query {
+        background-color: cornflowerblue;
+        color: yellowgreen;
+    }
+}

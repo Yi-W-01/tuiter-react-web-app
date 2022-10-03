@@ -1,0 +1,180 @@
+#search-input::placeholder{
+    padding-left: 30px;
+    color: rgb(110,118,125);
+    background-image: url('images/search.png');
+    background-repeat: no-repeat;
+}
+
+.wd-bg-padding{
+    margin-left:16px;
+}
+
+.wd-bg-padding-around{
+    padding: 5px;
+}
+
+.wd-bg-border{
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-width: 1px;
+}
+
+.wd-bg-color-black{
+    background-color: black;
+}
+
+.wd-bg-search-color{
+    background-color: rgb(47, 51, 54);
+}
+
+.wd-bg-color-darkgrey{
+    background-color: darkgray;
+}
+
+.wd-font-color-greywhite{
+    color: rgb(110, 118, 125);
+}
+
+.wd-font-color-white{
+    color: white;
+}
+
+.wd-font-color-blue{
+    color: rgb(29,161,24);
+}
+
+.wd-search-input{
+    width:400px;
+    height:25px;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 50px;
+}
+
+.wd-search-gear{
+    float: right;
+    padding-top: 4px;
+    margin-right: 12px;
+}
+
+.wd-fg-color-white-border{
+    color: white;
+    font-weight: bolder;
+}
+
+.wd-grid {
+    clear: both;
+}
+
+.wd-grid-heading-bar{
+    clear: both;
+    font-size: 15px;
+}
+
+.wd-grid-heading-foryou {
+    width: 15.62%;
+    float: left;
+    color: rgb(29,161,242);
+}
+
+.wd-padding-top-bottom-right{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+}
+
+.wd-grid-heading {
+    width: 15.62%;
+    float: left;
+    color: rgb(110,118,125);
+}
+
+.wd-heading-border-below {
+    width: 5%;
+    height: 3px;
+    float: left;
+    margin-top: 8px;
+    background-color: rgb(29,161,242);
+}
+
+.wd-heading-block-below {
+    width: 101.5%;
+    height: 10px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    margin-left: -16px;
+    float: left;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-trend-science{
+    padding-top: 5px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(47, 51, 54);
+    margin-left: -16px;
+    height: 90px;
+}
+
+.wd-trend{
+    padding-top: 5px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(47, 51, 54);
+    margin-left: -16px;
+    height: 70px;
+}
+
+.wd-topic{
+    font-size: 13px;
+    color: rgb(110,118,125);
+    margin-left: 16px;
+}
+
+.wd-white-topic{
+    font-size: 13px;
+    color: white;
+    margin-left: 16px;
+}
+
+
+.wd-title{
+    margin-top: 3px;
+    margin-left: 16px;
+    font-size: 16px;
+    color: white;
+}
+
+.wd-num-tuits{
+    margin-top: 3px;
+    margin-left: 16px;
+    font-size: 13px;
+    color: rgb(110,118,125);
+}
+
+.wd-trend-NYT{
+    padding-top: 5px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(47, 51, 54);
+    margin-left: -16px;
+    height: 105px;
+}
+
+.wd-float-left{
+    float: left;
+}
+
+.wd-float-right{
+    float: right;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    right: 16px;
+    border-radius: 20px;
+}
+
+.wd-float-done{
+    clear: both;
+}
