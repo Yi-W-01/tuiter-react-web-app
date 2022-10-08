@@ -1,0 +1,33 @@
+.fg-color-black { color: black; }
+.fg-color-white { color: white; }
+.fg-color-blue { color: #7070ff; }
+.fg-color-red { color: #ff7070; }
+.fg-color-green { color: green; }
+
+.bg-color-yellow
+{ background-color: #ffff07; }
+.bg-color-blue
+{ background-color: #7070ff; }
+.bg-color-red
+{ background-color: #ff7070; }
+.bg-color-green
+{ background-color: green; }
+
+.border-fat
+{ border-width: 20px 30px 20px 30px; }
+.border-thin { border-width: 4px; }
+.border-solid { border-style: solid; }
+.border-dashed { border-style: dashed; }
+.border-yellow { border-color: #ffff07; }
+.border-red { border-color: #ff7070; }
+.border-blue { border-color: #7070ff; }
+
+.btn-primary.override-bs {
+    background-color: #a90dfd;
+    border-color: #fd0d51;
+    border-width: 10px;
+    border-radius: 20px;
+    border-style: dashed;
+    font-size: 2em;
+    font-weight: bolder;
+}
