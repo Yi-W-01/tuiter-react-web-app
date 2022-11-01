@@ -1,29 +1,37 @@
-import React from "react";
-import ExploreComponent from "./explore";
-import NavigationSidebar from "./navigation-sidebar";
-import WhoToFollowList from "./who-to-follow-list";
-import {Routes, Route} from "react-router";
-import HomeComponent from "./home-screen/HomeExplore";
+import "./index.css";
+import {Outlet} from "react-router-dom";
+import NavigationSidebar from "./navigation-sidebar/index";
+import whoReducer from "./reducers/who-reducer";
+import WhoToFollowList
+    from "./who-to-follow-list/index";
+import tuitsReducer from "./reducers/tuits-reducer";
+import profileReducer from "./reducers/profile-reducer";
+import navReducer from "./reducers/nav-reducer";
+import {combineReducers, createStore} from "redux";
+import {Provider} from "react-redux";
+const reducer = combineReducers({
+    tuits: tuitsReducer,
+    who: whoReducer,
+    profile: profileReducer,
+    nav: navReducer,
+});
+const store = createStore(reducer);
 
-
-function Tuiter() {
+const Tuiter = () => {
     return (
-        <div className="row mt-2">
-            <div className="col-2 col-md-2 col-lg-1 col-xl-2">
-                <NavigationSidebar active="explore"/>
+        <Provider store={store}>
+            <div className="row mt-2">
+                <div className="col-2 col-lg-1 col-xl-2">
+                    <NavigationSidebar />
+                </div>
+                <div className="col-10 col-lg-7 col-xl-6">
+                    <Outlet />
+                </div>
+                <div className="d-none d-lg-block col-lg-4 col-xl-4">
+                    <WhoToFollowList/>
+                </div>
             </div>
-            <div className="col-10 col-md-10 col-lg-7 col-xl-6"
-                 style={{"position": "relative"}}>
-                <Routes>
-                    <Route path="home"    element={<HomeComponent/>}/>
-                    <Route path="explore" element={<ExploreComponent/>}/>
-                </Routes>
-            </div>
-            <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                <WhoToFollowList/>
-            </div>
-        </div>
+        </Provider>
     );
-}
-
-export default Tuiter
+};
+export default Tuiter;
