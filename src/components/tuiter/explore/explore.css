@@ -1,5 +1,7 @@
 
-
+input{
+    padding-left: 40px;
+}
 #search-input::placeholder{
     margin-left: 40px;
     color: grey;
