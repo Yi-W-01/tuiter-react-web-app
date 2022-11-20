@@ -1,17 +1,16 @@
 import React, {useState} from "react";
-import {useDispatch}  from "react-redux";
+import {useDispatch, useSelector}  from "react-redux";
+import {createTuit} from "../../actions/tuits-actions";
 
 const WhatsHappening = () => {
-    let [whatsHappening, setWhatsHappening]
-        = useState('');
+    const tuits = useSelector(
+        state => state.tuits);
+
+    const [newTuit, setNewTuit] =
+        useState({tuit:''});
+
     const dispatch = useDispatch();
-    const tuitClickHandler = () => {
-        console.log(whatsHappening);
-        dispatch({
-            type: 'create-tuit',
-            tuit: whatsHappening
-        });
-    }
+
     return (
         <>
             <div className="row mb-2 mt-2">
@@ -20,11 +19,12 @@ const WhatsHappening = () => {
                 </div>
 
                 <div className="col-11 ps-3">
-                  <textarea value={whatsHappening}
+                  <textarea value={newTuit.tuit}
                             className="form-control"
                             placeholder="What's happening"
-                            onChange={(event) =>
-                                setWhatsHappening(event.target.value)}>
+                            onChange={(e) =>
+                                setNewTuit({...newTuit,
+                                    tuit: e.target.value})}>
                   </textarea>
                 </div>
 
@@ -36,7 +36,8 @@ const WhatsHappening = () => {
                         <i className="col-1 fa-regular fa-calendar"/>
                     </div>
                     <div className="col-1">
-                        <button onClick={tuitClickHandler} className="btn btn-primary rounded-pill">
+                        <button onClick={() =>
+                            createTuit(dispatch, newTuit)} className="btn btn-primary rounded-pill">
                             Tuit
                         </button>
                     </div>

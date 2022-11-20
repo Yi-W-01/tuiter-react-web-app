@@ -1,4 +1,5 @@
 import {useDispatch} from "react-redux";
+import {updateTuit} from "../../actions/tuits-actions"
 
 const TuitStats = ({tuit}) => {
     const dispatch = useDispatch();
@@ -15,7 +16,7 @@ const TuitStats = ({tuit}) => {
                     <i className="fa-solid fa-retweet"></i><span> {tuit.stats.retuits}</span>
                 </div>
                 <div className="wd-grid-icon-num-bottom-1">
-                     <span onClick={likeTuit}>
+                     <span onClick={()=>updateTuit(dispatch, tuit)}>
                         {
                             tuit.liked &&
                             <i className="fas fa-heart me-1"

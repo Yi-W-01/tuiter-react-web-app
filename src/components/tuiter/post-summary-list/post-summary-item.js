@@ -1,27 +1,31 @@
-import React from "react";
 const PostSummaryItem = (
     {
         post = {
-            "topic": "Space",
-            "userName": "SpaceX",
-            "time": "2h",
-            "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-            "image": "tesla.png"
-        } }
-) => {
+            topic: "Web Development",
+            userName:"ReactJS",
+            time: "2h",
+            title: "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+            image: "/images/react-blue.png",
+            tweets: "",
+        }
+
+    }) =>{
     return(
-        <li className="list-group-item">
-            <div className="row">
-                <div className="col-10">
-                    <div>{post.userName} . {post.time}</div>
-                    <div className="fw-bolder">{post.topic}</div>
-                    <div>{post.title}</div>
+
+        <li className="list-group-item pe-2">
+            <div className="wd-content-text">
+                <div className="wd-float-left pb-2">
+                    <div className="wd-topic">{post.topic} </div>
+                    <div className="wd-title">{post.userName} <i className="fa-solid fa-circle-check"></i><span className="wd-font-color-grey"> - {post.time}</span></div>
+                    <div className="wd-text">{post.title}</div>
+                    <div className="wd-topic">{post.tweets}</div>
                 </div>
-                <div className="col-2">
-                    <img width={70} className="float-end rounded-3" src={`/images/${post.image}`}/>
+                <div>
+                    <img className="wd-float-right pt-2"  src={post.image} width="80px" height="80px" alt=""/>
                 </div>
+                <div className="wb-float-done"></div>
             </div>
         </li>
-    );
-};
+    )
+}
 export default PostSummaryItem;

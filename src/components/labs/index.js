@@ -1,20 +1,27 @@
-import Nav from "../../nav";
-import Assignment6 from "./a6";
-import Assignment7 from "./a7";
-import {Routes, Route} from "react-router";
+import React from "react";
+import {Link} from "react-router-dom";
+// import Classes from "./Classes";
+// import Styles from "./Styles";
+// import ConditionalOutput from "./ConditionalOutput";
+// import TodoItem from "./ToDo/TodoItem";
+// import TodoList from "./ToDo/TodoList";
+import ReduxExamples from "./redux-examples";
+const Labs = () => {
+    return(
+        <>
+            <h1>Labs!</h1>
+            <Link to="/hello">Hello</Link> |
+            <Link to="/tuiter">Tuiter</Link> |
 
-function Labs() {
-    return (
-        <div>
-            <Nav/>
-            <Routes>
-                <Route index
-                       element={<Assignment6/>}/>
-                <Route path="a7"
-                       element={<Assignment7/>}/>
-            </Routes>
-        </div>
-    );
-}
+
+            <ReduxExamples/>
+            {/*<TodoList />*/}
+            {/*<TodoItem />*/}
+            {/*<ConditionalOutput/>*/}
+            {/*<Styles/>*/}
+            {/*<Classes/>*/}
+        </>
+    )
+};
 
 export default Labs;

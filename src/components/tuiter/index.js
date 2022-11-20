@@ -10,6 +10,8 @@ import navReducer from "./reducers/nav-reducer";
 import postReducer from "./reducers/post-reducer";
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
+import { configureStore } from '@reduxjs/toolkit'
+
 const reducer = combineReducers({
     tuits: tuitsReducer,
     who: whoReducer,
@@ -17,7 +19,12 @@ const reducer = combineReducers({
     nav: navReducer,
     post: postReducer,
 });
-const store = createStore(reducer);
+
+const store = configureStore({
+    reducer: {
+        tuitsData: tuitsReducer, who: whoReducer, profile: profileReducer
+    }
+})
 
 const Tuiter = () => {
     return (
