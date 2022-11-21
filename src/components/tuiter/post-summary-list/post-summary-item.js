@@ -21,7 +21,7 @@ const PostSummaryItem = (
                     <div className="wd-topic">{post.tweets}</div>
                 </div>
                 <div>
-                    <img className="wd-float-right pt-2"  src={post.image} width="80px" height="80px" alt=""/>
+                    <img className="wd-float-right pt-2"  src={`/images/${post.image}`} width="80px" height="80px" alt=""/>
                 </div>
                 <div className="wb-float-done"></div>
             </div>

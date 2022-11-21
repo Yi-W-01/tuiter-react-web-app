@@ -1,9 +1,14 @@
 import "./index.css";
 import {Outlet} from "react-router-dom";
+
+import {Routes, Route} from "react-router";
 import NavigationSidebar from "./navigation-sidebar/index";
 import whoReducer from "./reducers/who-reducer";
 import WhoToFollowList
     from "./who-to-follow-list/index";
+import HomeComponent from "./home-screen";
+import ExploreComponent from "./explore";
+import ProfileComponent from "./profile-screen";
 import tuitsReducer from "./reducers/tuits-reducer";
 import profileReducer from "./reducers/profile-reducer";
 import navReducer from "./reducers/nav-reducer";
@@ -34,7 +39,13 @@ const Tuiter = () => {
                     <NavigationSidebar />
                 </div>
                 <div className="col-10 col-lg-7 col-xl-6">
-                    <Outlet />
+                    <Routes>
+                        <Route path="/home/"    element={<HomeComponent/>}/>
+                        <Route path="/explore/" element={<ExploreComponent/>}/>
+                        <Route path="/" element={<ExploreComponent/>}/>
+                        <Route path="/profile/" element={<ProfileComponent/>}/>
+                        {/*<Route path="/edit-profile/" element={<EditProfile/>}/>*/}
+                    </Routes>
                 </div>
                 <div className="d-none d-lg-block col-lg-4 col-xl-4">
                     <WhoToFollowList/>

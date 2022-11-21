@@ -247,7 +247,7 @@ input{
 .wd-title{
     font-weight: bold;
     font-size: 15px;
-    color: white;
+    /*color: white;*/
 }
 
 .wd-font-color-grey{
@@ -263,7 +263,7 @@ input{
 }
 
 .wd-text{
-    color: white;
+    /*color: white;*/
     font-weight: bold;
 }
 
