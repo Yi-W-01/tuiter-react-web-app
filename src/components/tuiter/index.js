@@ -9,6 +9,11 @@ import profileReducer from "./reducers/profile-reducer";
 import navReducer from "./reducers/nav-reducer";
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
+import ExploreScreen from "../tuiter/ExploreScreen/ExploreScreen";
+import HomeScreen from "../tuiter/HomeScreen";
+import ProfileScreen from "../tuiter/ProfileScreen";
+import EditProfile from "../tuiter/ProfileScreen/edit-profile";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 const reducer = combineReducers({
     tuits: tuitsReducer,
     who: whoReducer,
@@ -25,7 +30,12 @@ const Tuiter = () => {
                 <NavigationSidebar />
             </div>
             <div className="col-10 col-lg-7 col-xl-6">
-                <Outlet />
+                <Routes>
+                    <Route path="/home/"    element={<HomeScreen/>}/>
+                    <Route path="/explore/" element={<ExploreScreen/>}/>
+                    <Route path="/profile/" element={<ProfileScreen/>}/>
+                    <Route path="/edit-profile/" element={<EditProfile/>}/>
+                </Routes>
             </div>
             <div className="d-none d-lg-block col-lg-4 col-xl-4">
                 <WhoToFollowList/>

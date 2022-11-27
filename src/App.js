@@ -21,16 +21,16 @@ function App() {
                              element={<Labs/>}/>
                       <Route path="hello"
                              element={<HelloWorld/>}/>
-                      <Route path="tuiter"
+                      <Route path="tuiter/*"
                              element={<Tuiter/>}>
-                          <Route index
-                                 element={<HomeScreen/>}/>
-                          <Route path="explore"
-                                 element={<ExploreScreen/>}/>
-                          <Route path="profile"
-                                 element={<ProfileScreen/>}/>
-                          <Route path="edit-profile"
-                                 element={<EditProfile/>}/>
+                          {/*<Route index*/}
+                          {/*       element={<HomeScreen/>}/>*/}
+                          {/*<Route path="tuiter/explore"*/}
+                          {/*       element={<ExploreScreen/>}/>*/}
+                          {/*<Route path="profile"*/}
+                          {/*       element={<ProfileScreen/>}/>*/}
+                          {/*<Route path="edit-profile"*/}
+                          {/*       element={<EditProfile/>}/>*/}
                       </Route>
                   </Route>
               </Routes>

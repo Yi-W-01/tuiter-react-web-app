@@ -1,6 +1,6 @@
 
 [
-    {"link": "/tuiter/", "icon": "fa-solid fa-home","title":"Home"},
+    {"link": "/tuiter/home", "icon": "fa-solid fa-home","title":"Home"},
     {"link": "/tuiter/explore", "icon": "fa-solid fa-hashtag", "title": "Explore"},
     {"link": "/", "icon": "fa-solid fa-bell", "title": "Notifications"},
     {"link": "/", "icon": "fa-solid fa-envelope",  "title": "Messages"},
