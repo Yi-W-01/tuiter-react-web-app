@@ -1,32 +1,28 @@
-import React, {useEffect} from 'react';
-import {useDispatch, useSelector} from 'react-redux';
-import TuitListItem from "./tuit-list-item";
-import {findTuitsThunk}
-    from "../../services/tuits-thunks";
+import React, {useEffect} from "react";
+import {useDispatch, useSelector}
+    from "react-redux";
+import {findAllTuits}
+    from "../../actions/tuits-actions";
+import TuitListItem
+    from "./tuit-list-item";
+
 
 const TuitList = () => {
-    const {tuits, loading} = useSelector(state => state.tuitsData);
+    const tuits = useSelector(
+        state => state.tuits);
+
     const dispatch = useDispatch();
 
-    useEffect(() => {
-        dispatch(findTuitsThunk())
-    }, []); //eslint-disable-line react-hooks/exhaustive-deps
+    useEffect(()=>findAllTuits(dispatch), []);
 
     return (
-        <>
-            <ul className="list-group mx-2">
-                {
-                    loading &&
-                    <li className="list-group-item">
-                        Loading...
-                    </li>
-                }
-                {
-                    tuits.map(tuit => <TuitListItem key={tuit._id} tuit={tuit}/>)
-                }
-            </ul>
-        </>
-    )
+        <ul className="ttr-tuits list-group">
+            {
+                tuits.map && tuits.map(tuit =>
+                    <TuitListItem tuit={tuit}/>)
+            }
+        </ul>
+    );
 }
 
 export default TuitList;

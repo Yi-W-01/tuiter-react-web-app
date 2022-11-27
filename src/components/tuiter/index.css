@@ -29,6 +29,7 @@
 
 .wd-tuit-authorname{
     font-size: 15px;
+    color: white;
     font-weight: bold;
 }
 
@@ -45,6 +46,7 @@
 
 .wd-tuit-content-text{
     font-size: 15px;
+    color: white;
 
     margin-bottom: 12px;
 }
@@ -68,6 +70,7 @@
 .wd-tuit-content-bottom-title{
 
     font-weight: bold;
+    color: white;
 }
 
 .wd-tuit-content-bottom-text{

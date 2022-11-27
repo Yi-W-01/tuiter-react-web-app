@@ -49,7 +49,7 @@ const Todos = () => {
             <ul className="list-group">
                 {
                     todos.map(todo =>
-                        <li key={todo._id} className="list-group-item">
+                        <li className="list-group-item">
                             <input checked={todo.done}
                                    onChange={(event) =>
                                        updateTodoClickHandler(
@@ -68,16 +68,14 @@ const Todos = () => {
 
                 <li className="list-group-item">
                     <input
-                        onChange={todoChangeHandler}
-                        value={todo.do}
-                        className="form-control"/>
+                            onChange={todoChangeHandler}
+                            value={todo.do}
+                            className="form-control"/>
 
                     <button onClick={createTodoClickHandler}
                             className="btn btn-primary">
                         Create New Todo
                     </button>
-
-
                 </li>
             </ul>
         </>

@@ -1,15 +1,15 @@
 import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import './App.css';
-import Labs from "./components/labs";
-import HelloWorld from "./components/labs/a6/hello-world";
-import Tuiter from "./components/tuiter"
-import ExploreScreen from "./components/tuiter/explore/index";
-import HomeScreen from "./components/tuiter/home-screen/index";
-import ProfileScreen from "./components/tuiter/profile-screen";
-import EditProfile from "./components/tuiter/profile-screen/edit-profile";
-import {BrowserRouter} from "react-router-dom";
-import {Routes, Route} from "react-router";
+import Labs from "./components/labs/index";
+import Tuiter from "./components/tuiter/index";
+import HelloWorld from "./components//hello-world";
+import ExploreScreen from "./components/tuiter/ExploreScreen/ExploreScreen";
+import HomeScreen from "./components/tuiter/HomeScreen";
+import ProfileScreen from "./components/tuiter/ProfileScreen";
+import EditProfile from "./components/tuiter/ProfileScreen/edit-profile";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
                              element={<Labs/>}/>
                       <Route path="hello"
                              element={<HelloWorld/>}/>
-                      <Route path="tuiter/*"
+                      <Route path="tuiter"
                              element={<Tuiter/>}>
                           <Route index
                                  element={<HomeScreen/>}/>

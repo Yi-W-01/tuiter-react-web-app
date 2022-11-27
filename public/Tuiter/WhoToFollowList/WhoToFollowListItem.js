@@ -1,6 +1,6 @@
 const WhoToFollowListItem = (who) =>{
     return(`
-
+         
          <li class="list-group-item ps-0 ">
                 <div class="wd-right-bar-float-left">
                         <img class="wd-right-bar-logo"  src=${who.avatarIcon}/>

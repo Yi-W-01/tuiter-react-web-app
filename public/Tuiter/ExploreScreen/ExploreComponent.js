@@ -37,12 +37,12 @@ const ExploreComponent = () => {
                     <span class="d-none d-lg-none  d-md-block wd-content-img-overlay-text-md">SpaceX's Starship</span>
                     <span class="d-none d-md-none  d-sm-block wd-content-img-overlay-text-sm">SpaceX's Starship</span>
                     <span class="d-block d-sm-none  wd-content-img-overlay-text-xs">SpaceX's Starship</span>
-
+                    
                 </div>
             </div>
        </div>
 
-
+            
            ${PostSummaryList()}
     `);
 }

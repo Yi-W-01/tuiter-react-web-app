@@ -9,19 +9,19 @@ import ReduxExamples from "./redux-examples";
 const Labs = () => {
     return(
         <>
-            <h1>Labs!</h1>
-            <Link to="/hello">Hello</Link> |
-            <Link to="/tuiter">Tuiter</Link> |
+            <h1>MongoDB!</h1>
+            {/*<Link to="/hello">Hello</Link> |*/}
+            <Link to="/tuiter">Tuiter</Link>
 
 
-            <ReduxExamples/>
+            {/*<ReduxExamples/>*/}
             {/*<TodoList />*/}
             {/*<TodoItem />*/}
             {/*<ConditionalOutput/>*/}
             {/*<Styles/>*/}
             {/*<Classes/>*/}
         </>
-    )
+)
 };
 
 export default Labs;

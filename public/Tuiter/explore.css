@@ -1,8 +1,9 @@
+
 #search-input::placeholder{
-    padding-left: 30px;
+    padding-left: 40px;
     color: rgb(110,118,125);
-    background-image: url('images/search.png');
-    background-repeat: no-repeat;
+    /*background-image: url('images/search.png');*/
+    /*background-repeat: no-repeat;*/
 }
 
 .wd-bg-padding{
@@ -24,7 +25,7 @@
 }
 
 .wd-bg-search-color{
-    background-color: rgb(47, 51, 54);
+    background-color: white;
 }
 
 .wd-bg-color-darkgrey{
@@ -44,18 +45,14 @@
 }
 
 .wd-search-input{
-    width:400px;
-    height:25px;
+    width:90%;
+    height:35px;
 }
 
 .wd-rounded-corners-all-around {
-    border-radius: 50px;
-}
 
-.wd-search-gear{
-    float: right;
-    padding-top: 4px;
-    margin-right: 12px;
+    border-radius: 50px;
+    border-width: 1px;
 }
 
 .wd-fg-color-white-border{
@@ -63,118 +60,199 @@
     font-weight: bolder;
 }
 
-.wd-grid {
+.wd-padding-top{
+    padding-top: 10px;
+}
+
+
+.wd-float-left{
+    float: left;
+    width: 80%;
+}
+
+.wd-float-right{
+    float: right;
+    height: 75px;
+    width: 70px;
+    border-radius: 20px;
+
+}
+
+.wd-right-bar-float-left{
+    float: left;
+    padding-top: 5px;
+}
+
+.wd-right-bar-logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 80px;
+}
+
+.wd-right-bar-logo-smaller{
+    height: 30px;
+    width: 30px;
+    border-radius: 80px;
+}
+
+.wd-right-bar-btn{
+    width: 60px;
+}
+
+.wd-right-bar-float-right{
+    float: right;
+    padding-top: 10px;
+}
+
+.wd-right-bar-title{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.wd-right-bar-author{
+    font-size: 12px;
+}
+
+.wd-float-done{
     clear: both;
 }
 
-.wd-grid-heading-bar{
-    clear: both;
+.wd-font-size{
     font-size: 15px;
+    font-weight: bold;
 }
 
-.wd-grid-heading-foryou {
-    width: 15.62%;
-    float: left;
-    color: rgb(29,161,242);
+.wd-margin-top{
+    margin-top: 10px;
 }
 
-.wd-padding-top-bottom-right{
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 16px;
+.wd-button-tweet{
+    background-color: #0d6efd;
+    color: white;
+    border-style: none;
+    font-size: 13px;
+    height: 30px;
+    -webkit-border-radius:20px;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
 }
 
-.wd-grid-heading {
-    width: 15.62%;
-    float: left;
-    color: rgb(110,118,125);
+.wd-search-gear{
+    position: relative;
+    top: 5px;
+    left:15px;
 }
 
-.wd-heading-border-below {
-    width: 5%;
-    height: 3px;
-    float: left;
-    margin-top: 8px;
-    background-color: rgb(29,161,242);
+.wd-img-text{
+    position: relative;
 }
 
-.wd-heading-block-below {
-    width: 101.5%;
-    height: 10px;
-    margin-top: 2px;
-    margin-bottom: 10px;
-    margin-left: -16px;
-    float: left;
-    border-color: rgb(47, 51, 54);
+.wd-content-img{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
 }
 
-.wd-trend-science{
-    padding-top: 5px;
-    border-bottom-style: solid;
-    border-width: 1px;
-    border-color: rgb(47, 51, 54);
-    margin-left: -16px;
-    height: 90px;
+.wd-content-img-overlay-text-xxl{
+    position: absolute;
+    top: 450px;
+    left:10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
 }
 
-.wd-trend{
-    padding-top: 5px;
-    border-bottom-style: solid;
-    border-width: 1px;
-    border-color: rgb(47, 51, 54);
-    margin-left: -16px;
-    height: 70px;
+.wd-content-img-overlay-text-xl {
+    position: absolute;
+    top: 385px;
+    left:10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.wd-content-img-overlay-text-lg {
+    position: absolute;
+    top: 315px;
+    left:10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.wd-content-img-overlay-text-md {
+    position: absolute;
+    top: 342px;
+    left:10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.wd-content-img-overlay-text-sm {
+    position: absolute;
+    top: 245px;
+    left:10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.wd-content-img-overlay-text-xs {
+    position: absolute;
+    top: 255px;
+    left:10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.pos-relative{
+    position: relative;
 }
 
 .wd-topic{
     font-size: 13px;
     color: rgb(110,118,125);
-    margin-left: 16px;
-}
+    font-weight: bold;
 
-.wd-white-topic{
-    font-size: 13px;
-    color: white;
-    margin-left: 16px;
 }
-
 
 .wd-title{
-    margin-top: 3px;
-    margin-left: 16px;
-    font-size: 16px;
-    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
 }
 
-.wd-num-tuits{
-    margin-top: 3px;
-    margin-left: 16px;
-    font-size: 13px;
+.wd-font-color-grey{
     color: rgb(110,118,125);
 }
 
-.wd-trend-NYT{
-    padding-top: 5px;
-    border-bottom-style: solid;
-    border-width: 1px;
-    border-color: rgb(47, 51, 54);
-    margin-left: -16px;
-    height: 105px;
-}
-
-.wd-float-left{
-    float: left;
-}
-
-.wd-float-right{
-    float: right;
-    height: 100px;
-    width: 100px;
-    position: relative;
-    right: 16px;
-    border-radius: 20px;
-}
-
-.wd-float-done{
+.wd-content-text{
     clear: both;
+}
+
+.wd-content-margin-left{
+    margin-left: 16px;
+}
+
+.wd-text{
+    color: black;
+    font-weight: bold;
+}
+
+.wd-right-bar-font-border{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.wd-right-bar-width{
+    height: 40px;
+}
+
+.wd-position-search-icon{
+    position: absolute;
+    left: 16px;
+    top:15px;
 }

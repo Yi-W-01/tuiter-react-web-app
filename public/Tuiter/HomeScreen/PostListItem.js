@@ -1,6 +1,6 @@
 const PostListItem = (post) =>{
     return(`
-
+     
             <div class="wd-grid-image-left">
                 <img class="wd-avatar-image " src=${post.profile}>
             </div>
@@ -18,23 +18,23 @@ const PostListItem = (post) =>{
                     ${post.title}
                     </div>
 
-
-
+                   
+                    
                     <div class="card wd-bg-color-card" style="width:100%; border-style: solid; border-color: dimgrey; border-width: 1px; border-radius: 30px">
                         <img src=${post.image} class="card-img-top wd-tuit-content-image" alt="...">
-
+                       
                         <div class="card-body pt-0 pb-0">
-                            ${post.topic ?
+                            ${post.topic ? 
                                 `<div class="wd-tuit-content-bottom-title">
                                     ${post.topic}
                                 </div>` : ""}
-
-                            ${post.text ?
+                           
+                            ${post.text ? 
                                     `<div class="wd-tuit-content-bottom-text pt-1 pb-1">
                                     ${post.text}
                                 </div>` : ""}
                     </div>
-
+                        
                     </div>
 
 
