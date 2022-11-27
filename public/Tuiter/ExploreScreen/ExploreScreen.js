@@ -12,9 +12,10 @@ import WhoToFollowList from "../WhoToFollowList/WhoToFollowList.js";
             <div class="col-xl-7 col-lg-7 col-10">
                ${ExploreComponent()}
             </div>
-
+            
             <div class="col-xl-3 col-lg-4 d-none d-lg-block">
                ${WhoToFollowList()}
             </div>
         </div>
     `);
+

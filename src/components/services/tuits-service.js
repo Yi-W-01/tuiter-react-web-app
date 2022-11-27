@@ -1,6 +1,8 @@
 import axios from 'axios';
-const API_BASE = process.env.REACT_APP_API_BASE;
-//const API_BASE = 'https://cs5610server.herokuapp.com/api';
+// const TUITS_API = 'https://cs5610server.herokuapp.com/api/tuits';
+//const TUITS_API = 'http://localhost:4000/api/tuits';
+//const API_BASE = process.env.REACT_APP_API_BASE;
+const API_BASE = 'https://cs5610server.herokuapp.com/api' || 'http://localhost:4000/api';
 const TUITS_API = `${API_BASE}/tuits`;
 
 export const createTuit = async (tuit) => {
@@ -10,7 +12,6 @@ export const createTuit = async (tuit) => {
 export const findAllTuits = async () => {
     const response = await axios.get(TUITS_API);
     const tuits = response.data;
-    console.log(tuits)
     return tuits;
 }
 export const deleteTuit = async (tuit) => {

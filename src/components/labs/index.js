@@ -21,7 +21,7 @@ const Labs = () => {
             {/*<Styles/>*/}
             {/*<Classes/>*/}
         </>
-    )
+)
 };
 
 export default Labs;

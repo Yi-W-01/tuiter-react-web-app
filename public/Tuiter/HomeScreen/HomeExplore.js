@@ -11,9 +11,10 @@ $('#wd-home').append(`
             <div class="col-xl-6 col-lg-7 col-10">
                ${PostList()}
             </div>
-
+            
             <div class="col-xl-4 col-lg-4 d-none d-lg-block mt-2 ">
                ${PostSummaryList()}
             </div>
         </div>
     `);
+
